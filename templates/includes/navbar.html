@@ -22,8 +22,15 @@
                             Home
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="cars.html">
+                        <a
+                                {% if 'cars' in request.path %}
+                                class="nav-link active"
+                                {% else %}
+                                class="nav-link"
+                                {% endif %}
+                                class="nav-link" href="{% url 'cars:chome' %}">
                             Cars
                         </a>
                     </li>
