@@ -6,12 +6,12 @@ from datetime import datetime
 
 class car(models.Model):
     STATE_CHOICES=[
-        ('P1','Provience No. 1'),
-        ('P2','Provience No. 2'),
-        ('BP','Bagamati Provience'),
-        ('LP','Lumbini Provience'),
-        ('KP','Karnali Provience'),
-        ('SP','Sudurpaschim Provience'),
+        ('Provience No.1','Provience No. 1'),
+        ('Provience No.2 ','Provience No. 2'),
+        ('Bagmati Provience','Bagamati Provience'),
+        ('Lumbini Provience','Lumbini Provience'),
+        ('Karnali Provience','Karnali Provience'),
+        ('Sudarpashim Provience','Sudurpaschim Provience'),
     ]
     YEAR=[]
     for i in range(2000 , (datetime.now().year+1)):
@@ -92,10 +92,11 @@ class car(models.Model):
     years=models.IntegerField(choices=YEAR)
     features=MultiSelectField(choices=FEATURE_CHOICES)
     doors=models.CharField(choices=DOOR_CHOICES,max_length=100)
-    passenger=models.IntegerField()
+    passenger=models.PositiveIntegerField()
     model=models.CharField(max_length=100)
     price=models.IntegerField()
     milege=models.IntegerField()
+    miles=models.PositiveIntegerField()
     description=RichTextField()
     interior=models.CharField(max_length=100)
     condition=models.CharField(max_length=100)
@@ -113,7 +114,9 @@ class car(models.Model):
     engine=models.CharField(max_length=100)
     vin_number=models.CharField(max_length=100,blank=True)
     created_date=models.DateField(default=datetime.now,blank=True)
-
+    brand=models.CharField(max_length=100,default='Unknown')
+    vehicle_type=models.CharField(max_length=100,default='Unknown')
+    discount_percent=models.PositiveSmallIntegerField(default=0)
     def __str__(self):
         return self.car_title
 

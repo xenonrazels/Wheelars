@@ -1,0 +1,10 @@
+{% extends 'admin/base_site.html' %}
+{% block branding %}
+    {% load static %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}"><img src="{% static 'img/logos/wheelar.png' %}" width="100px" height="76px" /><span style="color: #0b0b0b">Wheelars Administration</span> </a><br></h1>
+    <h3 style="justify-content: center">Welcome!! to Wheelars admin dashboard.</h3>
+
+{% endblock %}
+{% block extrastyle %}
+    <link rel="stylesheet"  href="{% static 'css/admin.css' %}" />
+{% endblock %}

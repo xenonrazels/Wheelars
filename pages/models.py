@@ -6,7 +6,7 @@ class Team(models.Model):
     last_name=models.CharField(max_length=50)
     email=models.EmailField()
     designation=models.CharField(max_length=100)
-    profile_img=models.ImageField(upload_to='media/team/%Y/%m/%d')
+    profile_img=models.ImageField(upload_to='team/%Y/%m/%d')
     hire_date=models.DateField(auto_now_add=True)
     facebook_link=models.URLField(max_length=100, blank=True)
     twitter_link=models.URLField(max_length=100, blank=True)

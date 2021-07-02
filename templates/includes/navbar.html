@@ -3,7 +3,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand company-logo" href="{% url 'pages:home' %}">
-                <img src="{%  static 'img/logos/Wheelar.png' %}" alt="logo"><span style="margin-left:2px; font-size: 40px;color: White; font-family:cursive" >Wheel@Rs.</span>
+                <img src="{%  static 'img/logos/Wheelar.png' %}" alt="logo"><span style="margin-left:2px; font-size: 40px;color: White; font-weight: lighter; font-family:cursive" >Wheel@Rs.</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span>
@@ -14,12 +14,12 @@
 
                         <a
                                 {% if '/' ==  request.path %}
-                        class="nav-link active"
+                        class="nav-link active "
                         {% else %}
                                 class="nav-link"
                         {% endif %}
                                 href="{% url 'pages:home' %}">
-                            Home
+                           <i class="fa fa-home fa-lg text-white"> </i> Home
                         </a>
                     </li>
 
@@ -31,35 +31,35 @@
                                 class="nav-link"
                                 {% endif %}
                                 class="nav-link" href="{% url 'cars:chome' %}">
-                            Cars
+                            <span class="fa fa-car fa-lg text-white"> </span>Cars
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a   {% if 'about' ==  request.path %}
+                        <a   {% if 'about' in  request.path %}
                         class="nav-link active"
                         {% else %}
                                 class="nav-link"
                         {% endif %} href="{% url 'pages:about' %}">
-                            About
+                         <span class="fa fa-info fa-lg text-white "></span>   About
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a   {% if 'services' ==  request.path %}
+                        <a   {% if 'services' in  request.path %}
                         class="nav-link active"
                         {% else %}
                                 class="nav-link"
                         {% endif %} href="{% url 'pages:services' %}">
-                            Services
+                            <span class="fa fa-wrench  fa-lg text-white">&nbsp;</span>Services
                         </a>
                     </li>
 
 
                     <li class="nav-item dropdown">
-                        <a   {% if 'contact' ==  request.path %}
+                        <a   {% if 'contact' in  request.path %}
                         class="nav-link active"
                         {% else %}
                                 class="nav-link"
-                        {% endif %} href="{% url 'pages:contact' %}">Contact</a>
+                        {% endif %} href="{% url 'pages:contact' %}"><span class="fa fa-address-card fa-lg text-white " ></span>Contact </a>
                     </li>
                     <li class="nav-item dropdown m-hide">
                         <a href="#full-page-search" class="nav-link h-icon">

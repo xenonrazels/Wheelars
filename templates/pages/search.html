@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load humanize %}
+    <!-- Banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Search Results</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Search</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Banner end -->
+
+<!-- Search box 3 start -->
+<div class="search-box-3 sb-7 bg-active">
+    <div class="container">
+        <div class="search-area-inner">
+            <div class="search-contents">
+                <form action="{% url 'cars:search' %}" method="GET">
+                <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="form-control search-fields" name="brand">
+                        <option selected="true" disabled="disabled">Brand</option>
+                        {% for brand in brand_search %}
+                        <option value="{{ brand }}">{{ brand}}</option>
+                        {% endfor %}
+                    </select>
+                            </div>
+                 </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="location">
+                                <option selected="true" disabled="disabled">Location</option>
+
+                                     {% for state in state_search %}
+                                     <option value="{{ state }}">{{ state  }}</option>
+                                     {% endfor %}
+                                </select>
+                            </div>
+                 </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                 <select class="form-control search-fields" name="year">
+                        <option selected="true" disabled="disabled">Year</option>
+                        {% for year in year_search %}
+                        <option value="{{ year }}">{{ year }}</option>
+                        {% endfor %}
+                    </select>
+                            </div>
+                 </div>
+    <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                    <select class="form-control search-fields" name="body_type">
+                        <option selected="true" disabled="disabled">Select Type Of Car</option>
+                        {% for type in body_style_search %}
+                        <option value="{{ type }}">{{ type}}</option>
+                        {% endfor %}
+                    </select>
+                            </div>
+                 </div>
+
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <select class="selectpicker search-fields" name="transmission">
+                                    <option selected disabled>Transmission</option>
+                                      {% for type in transmission_search %}
+{#                                          {{ pprint() }}#}
+                                 <option value="{{ type }}">{{ type |capfirst}}</option>
+                        {% endfor %}
+                                </select>
+                            </div>
+                </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                            <div class="form-group">
+                                <div class="range-slider">
+                                    <div data-min="0" data-max="150000" data-unit="USD" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group mb-0 col-sm-2 pr-3">
+                                <button class="btn btn-outline-white text-white">Search</button>
+                            </div>
+                </div>
+                        </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search box 3 end -->
+
+<!-- Featured car start -->
+<div class="featured-car content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Here's your <span>Cars</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row">
+
+            {% for car in searched_cars %}
+            <div class="col-lg-4 col-md-6">
+                <div class="car-box">
+                    <div class="car-thumbnail">
+                        <a href="{% url 'cars:car_details' car.id %}" class="car-img">
+                            <div class="tag">For Sale</div>
+                            <img class="d-block w-100" src="{{ car.tumbnail_img.url }}" height="265px" alt="car">
+                            <div class="facilities-list clearfix">
+                                <ul>
+                                    <li>
+                                        <span><i class="flaticon-way"></i></span>{{ car.miles }}
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-calendar-1"></i></span>{{ car.years }}
+                                    </li>
+                                    <li>
+                                        <span><i class="flaticon-manual-transmission"></i></span>{{ car.transmission }}
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                        <div class="carbox-overlap-wrapper">
+                            <div class="overlap-box">
+                                <div class="overlap-btns-area">
+                                    <a class="overlap-btn" data-toggle="modal" data-target="#carOverviewModal">
+                                        <i class="fa fa-eye-slash"></i>
+                                    </a>
+                                    <div class="car-magnify-gallery">
+                                        <a href="{{ car.pic_front.url }}" class="overlap-btn" data-sub-html="<h4>Lamborghini Huracán</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <i class="fa fa-expand"></i>
+                                            <img class="hidden" src="{{ car.pic_front.url }}" alt="hidden-img">
+                                        </a>
+                                        <a href="{{ car.pic_back.url }}" class="hidden" data-sub-html="<h4>Lexus GS Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <img class="hidden" src="{{ car.pic_back.url }}" alt="hidden-img">
+                                        </a>
+                                        <a href="{{ car.pic_left.url }}" class="hidden" data-sub-html="<h4>2015 Porsche Cayenne</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <img class="hidden" src="{{ car.pic_left.url }}" alt="hidden-img">
+                                        </a>
+                                        <a href="{{ car.pic_right.url }}" class="hidden" data-sub-html="<h4>Toyota Corolla</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <img class="hidden" src="{{ car.pic_right.url }}" alt="hidden-img">
+                                        </a>
+                                        <a href="{{ car.tumbnail_img.url }}" class="hidden" data-sub-html="<h4>Toyota Prius Specs</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>">
+                                            <img class="hidden" src="{{ car.tumbnail_img.url }}" alt="hidden-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <h1 class="title">
+                            <a href="{% url 'cars:car_details' car.id %}">{{ car.car_title }}</a>
+                        </h1>
+                        <div class="location">
+                            <a href="{% url 'cars:car_details' car.id %}">
+                                <i class="flaticon-pin"></i>{{ car.city }}, {{ car.states }}
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer clearfix">
+                        <div class="pull-left ratings days">
+                            <p class="cartype">{{ car.models }}</p>
+                        </div>
+                        <div class="pull-right">
+                            <p class="price">${{ car.price|intcomma }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+    {% endblock %}

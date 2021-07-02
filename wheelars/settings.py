@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'pages',
     'cars',
     'ckeditor',
-    'multiselectfield'
+    'multiselectfield',
+    'mathfilters',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
@@ -81,9 +83,9 @@ WSGI_APPLICATION = 'wheelars.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wheelarsdb',
-        'USER':'sudhan',
-        'PASSWORD' : 'nooduiloveu25!.',
+        'NAME': 'wheelarsprojdb',
+        'USER':'aacreetiee',
+        'PASSWORD' : 'aakuiloveu25!.',
         'HOST':'localhost',
         'PORT':'',
     }
