@@ -14,3 +14,16 @@ class Team(models.Model):
 
     def __str__(self):
         return self.first_name.capitalize() +" "+ self.last_name.capitalize()
+class Contact(models.Model):
+    name=models.CharField(max_length=100)
+    email=models.EmailField(max_length=100)
+    subject=models.CharField(max_length=100)
+    message=models.TextField(max_length=500)
+    phone=models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.name
+    class Meta:
+        verbose_name='Contact'
+        verbose_name_plural='Contacts'
+

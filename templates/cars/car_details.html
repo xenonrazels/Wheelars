@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
-
+{% block title %}
+Wheelars | {{ car_detail.car_title }}
+{% endblock %}
 {% block content %}
+    {% load static %}
 <!-- Sub banner start -->
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
@@ -16,6 +19,7 @@
 <!-- Sub Banner end -->
 
 <!-- Car details page start -->
+    {% include 'includes/messages.html' %}
 <div class="car-details-page content-area-6">
     <div class="container">
         <div class="row">
@@ -129,12 +133,13 @@
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
                     <!-- Advanced search start -->
+
                     <div class="widget advanced-search d-none-992">
                         <button class="btn btn-outline-danger bomd btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Send message</button>
 
 
                         <br>
-                        <h3 class="sidebar-title">Refine Your Search</h3>
+                        <h3 class="sidebar-title">Car Details</h3>
                         <ul>
                             <li>
                                 <span>Body Style:</span>{{ car_detail.body_style }}
@@ -188,23 +193,30 @@
                         <div class="modal-content">
                           <div class="contact-dealer modal-header">
                             <!-- <h5 class="modal-title" id="inquiryModalLabel">Contact Dealer</h5> -->
-                            <img src="img/logos/logo-black-white.png">
+                              <centre ><img src="{% static 'img/logos/wheelar.png' %}" height="155px" /></centre>
                             <button type="button" class="close" data-dismiss="modal">
                               <span>&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            <form action="#">
+                            <form action="{% url 'contact:inquery' %}" method="post">
+                            {% csrf_token %}
                                 <div class="form-group">
                                   <label for="name" class="col-form-label">Hello, My Name is</label>
                                   <div class="row">
                                     <div class="col">
-                                      <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                                      <input type="text" name="first_name" class="form-control" {% if user.is_authenticated %}value="{{ user.first_name }}"{% endif %} placeholder="First Name" required>
                                     </div>
                                     <div class="col">
-                                      <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                                      <input type="text" name="last_name" class="form-control" {% if user.is_authenticated %}value="{{ user.last_name }}"{% endif %} placeholder="Last Name" required>
                                     </div>
                                   </div>
+                                    {% if user.is_authenticated %}
+                                        <input type="hidden" value="{{ user.id }}" name="user_id">
+                                        {% else %}
+                                        <input type="hidden" value="0" name="user_id">
+                                    {% endif %}
+                                <input type="hidden" name="car_id" value="{{ car_detail.id }}">
                                 </div>
                                   <div class="form-group">
                                       <select class="form-control" id="sel1" name="customer_need">
@@ -216,14 +228,14 @@
                                     </div>
 
                                 <div class="form-group">
-                                  <input type="text" name="car_title" class="form-control" value="LAMBORGHINI HURACÁN." readonly>
+                                  <input type="text" name="car_title" class="form-control" value="{{ car_detail.car_title }}" readonly>
                                 </div>
 
                                 <div class="form-group">
                                   <label for="name" class="col-form-label">I live in</label>
                                   <div class="row">
                                     <div class="col">
-                                      <input type="text" name="city" class="form-control" placeholder="City" required>
+                                      <input type="text" name="city"   class="form-control" placeholder="City" required>
                                     </div>
                                     <div class="col">
                                       <input type="text" name="state" class="form-control" placeholder="State" required>
@@ -235,7 +247,7 @@
                                   <div class="row">
                                     <div class="col">
                                         <label for="name" class="col-form-label">You can reach me by email at</label>
-                                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                      <input type="email" name="email" class="form-control" {% if user.is_authenticated %}value="{{ user.email }}"{% endif %} placeholder="Email Address" required>
                                     </div>
                                     <div class="col">
                                         <label for="phone" class="col-form-label">or by phone at</label>
@@ -243,7 +255,6 @@
                                     </div>
                                   </div>
                                 </div>
-
                                 <div class="form-group">
                                   <label for="message" class="col-form-label">Add comments</label>
                                   <textarea name="message" class="form-control" placeholder="Enter your message here (optional)"></textarea>
@@ -271,7 +282,7 @@
                         </ul>
                         <div class="social-list clearfix">
                             <ul>
-                                <li><a href="www.fb.com" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                               <i class="fa fa-twitter"></i>
                                 <li><a href="www.fb.com" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="www.fb.com" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="www.fb.com" class="rss-bg"><i class="fa fa-rss"></i></a></li>

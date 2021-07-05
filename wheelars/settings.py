@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import psycopg2
+from django.contrib.messages import constants as messages
+from django.urls  import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,11 +41,22 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'blog',
     'cars',
+    'contact',
     'ckeditor',
     'multiselectfield',
     'mathfilters',
-    'django.contrib.humanize'
+    'django.contrib.humanize',
+    'accounts',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google'
+
 ]
 
 MIDDLEWARE = [
@@ -135,3 +148,23 @@ STATICFILES_DIRS = [
 ]
 MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+MESSAGE_TAGS={
+    messages.INFO: 'info',
+    messages.SUCCESS: 'success',
+    messages.ERROR: 'danger',
+    messages.DEBUG:'debug',
+    50:'critical',
+}
+SITE_ID=1
+DEFAULT_HTTP_PROTOCOL = "https"
+LOGIN_REDIRECT_URL = reverse_lazy('accounts/dashboard')
+
+LOGIN_URL= reverse_lazy('accounts:login')
+
+#Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.gmail.com'
+EMAIL_PORT=587
+EMAIL_HOST_USER='sudhanregmi25@gmail.com'
+EMAIL_HOST_PASSWORD='TheGreatking25!'
+EMAIL_USE_TLS=True

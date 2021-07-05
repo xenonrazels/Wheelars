@@ -34,6 +34,17 @@
                             <span class="fa fa-car fa-lg text-white"> </span>Cars
                         </a>
                     </li>
+                 <li class="nav-item">
+                        <a
+                                {% if 'blog' in request.path %}
+                                class="nav-link active"
+                                {% else %}
+                                class="nav-link"
+                                {% endif %}
+                                class="nav-link" href="{% url 'blog:home' %}">
+                            <span class="fa flaticon-blog fa-lg text-white"> </span>Blog
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a   {% if 'about' in  request.path %}
                         class="nav-link active"

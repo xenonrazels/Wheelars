@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
-
+{% block title %}
+Wheelars | Cars Inventory
+{% endblock %}
 {% block content %}
+    {% load static %}
     {% load humanize %}
     {% load mathfilters %}
     <div class="sub-banner overview-bgi">
@@ -181,9 +184,10 @@
                     <div class="widget question widget-3">
                         <h5 class="sidebar-title">Follow us</h5>
                         <div class="social-list clearfix">
+<i class="fa fa-facebook-official"></i>
                             <ul>
                                 <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
                                 <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>

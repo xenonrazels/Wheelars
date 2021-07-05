@@ -1,0 +1,1609 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$S8VKQAxj30mdjUnbr2UdIq$F6Ycu/vr8iVvBkg8ehe982NAAqH4YwFmwcvODdUDzi0=",
+        "last_login": "2021-07-03T19:09:05.623Z",
+        "is_superuser": true,
+        "username": "djangoadmin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-06-29T12:21:46.530Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Vdrh9E9VQArghlb1vTkjUa$Ou7ZMBm2+6xmJkx4bSdVJw68eFX/fKviCK4F9MWsCSs=",
+        "last_login": "2021-07-03T19:15:58.155Z",
+        "is_superuser": false,
+        "username": "jeevanregmi",
+        "first_name": "jeevan",
+        "last_name": "regmi",
+        "email": "jeevanregmi15@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-02T17:11:33.825Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$260000$PhcXDOr3dw39NVqPP4Lxar$dbo/jSyF7jGQEYcZmoXgy2TCAi+e20KJy0AK/TzEC2U=",
+        "last_login": "2021-07-02T17:33:32.469Z",
+        "is_superuser": false,
+        "username": "sudhanregmi",
+        "first_name": "sudhan",
+        "last_name": "regmi",
+        "email": "sudhanregmi25@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-02T17:33:32.276Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "80sc3k3qkggx0qn5dm7x02upsjlazr6e",
+    "fields": {
+        "session_data": ".eJxVjEEOgjAURO_StWmgFPl16d4zNO38X4uaklBYGe8uJCx0MZt5b-atfFiX7Ncqsx9ZXZRRp98uBjyl7IAfodwnjaks8xj1ruiDVn2bWF7Xw_07yKHmbU1IqYtntBE0YEgOTe9cY5M1bCmECKEWXS-CSACM5S3EQpYSi6jPFxUTOZc:1lzl7O:Plv4FBLYWjrFK3eSrz2iJgWVVRT4y-8OYI2HwHJybdM",
+        "expire_date": "2021-07-17T19:15:58.158Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "h6mhseujrrqrmdp8jd13klf1cgchmpfl",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sImszNzhjN2c1YllFWCJdfQ:1lzcPJ:FxdgYQsSLYObndhZde5OZYjroVrXUDCa2agga2MpyzY",
+        "expire_date": "2021-07-17T09:57:53.697Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "r0orb361g7g4vmxemv1c73wnzxa95qws",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hCYkaG4dN8zEGBAqoYmpV0Z765NutDtf-_9l_BhW6vfel78xOIitDj9bjGkR2474Htot1mmua3LFOWuyIN2Oc6cn9fD_TuooddvnYiRB1DOQXKYbSYmMAAFNUSkwjopQyWQo2iHszIpWxMBESyQYiveH8x3Nuo:1lzdw8:m4lCXnQrKaxqKDbQGUrECqFynfOohh2mA1JRLsGHCMg",
+        "expire_date": "2021-07-17T11:35:52.609Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "rk01f99hb2c6moxq8izsc997edhf7kwf",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIkxGYWNBUXBwU0YyMSJdfQ:1lzcOz:7GuJ57SI68mlT35eOE-NrbtHh-4mI2FpChW8lWpjHfY",
+        "expire_date": "2021-07-17T09:57:33.104Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "twllnjsxmnei4nuzdvieniy79n3fwnv8",
+    "fields": {
+        "session_data": "eyJzb2NpYWxhY2NvdW50X3N0YXRlIjpbeyJwcm9jZXNzIjoibG9naW4iLCJzY29wZSI6IiIsImF1dGhfcGFyYW1zIjoiIn0sIm9lRDFITVdSSmRwOSJdfQ:1lzZYF:Wb5MUroDQivT-NpOMmiSmevg2L0lmKyhE53W9LzH_Bo",
+        "expire_date": "2021-07-17T06:54:55.520Z"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 1,
+    "fields": {
+        "first_name": "Sudhan",
+        "last_name": "Regmi",
+        "email": "sudhanregmi25@gmail.com",
+        "designation": "Chief Executive Officer(CEO)",
+        "profile_img": "team/2021/06/29/avatar-1.jpg",
+        "hire_date": "2021-06-29",
+        "facebook_link": "http://WWW.fb.com",
+        "twitter_link": "http://www.twitter.com",
+        "insta_link": "http://www.insta.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 2,
+    "fields": {
+        "first_name": "Aacreetiee",
+        "last_name": "Koirala",
+        "email": "aacreetieekoirala@gmail.com",
+        "designation": "Fashion and Web Designer Head",
+        "profile_img": "team/2021/06/29/avatar-2.jpg",
+        "hire_date": "2021-06-29",
+        "facebook_link": "http://www.fb.com",
+        "twitter_link": "http://www.twtter.com",
+        "insta_link": "http://www.insta.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 3,
+    "fields": {
+        "first_name": "Jeevan",
+        "last_name": "Regmi",
+        "email": "jeevanregmi15@gmai.com",
+        "designation": "Chief Financial Analyst (CFA)",
+        "profile_img": "team/2021/06/29/avatar-3.jpg",
+        "hire_date": "2021-06-29",
+        "facebook_link": "http://www.fb.com",
+        "twitter_link": "http://www.twitter.com",
+        "insta_link": "http://www.insta.com"
+    }
+},
+{
+    "model": "pages.team",
+    "pk": 4,
+    "fields": {
+        "first_name": "Aayush",
+        "last_name": "Bhatta",
+        "email": "aayushbhatta@gmail.com",
+        "designation": "Sales and Marketing Head",
+        "profile_img": "team/2021/06/29/avatar-11.jpg",
+        "hire_date": "2021-06-29",
+        "facebook_link": "http://www.fb.com",
+        "twitter_link": "http://www.twitter.com",
+        "insta_link": "http://www.insta.com"
+    }
+},
+{
+    "model": "pages.contact",
+    "pk": 1,
+    "fields": {
+        "name": "xvv",
+        "email": "safaf",
+        "subject": "safaf",
+        "message": "asdfsdff",
+        "phone": "safasf"
+    }
+},
+{
+    "model": "pages.contact",
+    "pk": 2,
+    "fields": {
+        "name": "jeevan regmi",
+        "email": "asdfasf",
+        "subject": "asdfasf",
+        "message": "afasfasf",
+        "phone": "sadfasdfs"
+    }
+},
+{
+    "model": "pages.contact",
+    "pk": 3,
+    "fields": {
+        "name": "jeevan regmi",
+        "email": "asdfasf",
+        "subject": "asdfasf",
+        "message": "afasfasf",
+        "phone": "sadfasdfs"
+    }
+},
+{
+    "model": "pages.contact",
+    "pk": 4,
+    "fields": {
+        "name": "jeevan regmi",
+        "email": "asdfasf",
+        "subject": "asdfasf",
+        "message": "afasfasf",
+        "phone": "sadfasdfs"
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+        "car_title": "Lamborghini Huracán",
+        "states": "Bagmati Provience",
+        "city": "Kathmandu",
+        "years": 2005,
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,Alarm System,ParkAssist,Power Steering,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Bluetooth Handset,Automatic Headlights",
+        "doors": "3",
+        "passenger": 6,
+        "model": "Hurican",
+        "price": 1000,
+        "milege": 120,
+        "miles": 10000,
+        "description": "<p>This is the wonder fun you are going to love this awesomw car</p>",
+        "interior": "Grey Color",
+        "condition": "Good",
+        "tumbnail_img": "cars/2021/06/29/1902536891.jpg",
+        "pic_front": "cars/2021/06/29/1902537077.jpg",
+        "pic_back": "cars/2021/06/29/1902537082.jpg",
+        "pic_left": "cars/2021/06/29/1902536917.jpg",
+        "pic_right": "cars/2021/06/29/1902537043.jpg",
+        "body_style": "Spoarts",
+        "color": "White",
+        "fuel_type": "Gasoline",
+        "is_featured": true,
+        "no_of_passed_owners": 2,
+        "transmission": "automatic",
+        "engine": "Hrdic",
+        "vin_number": "asjdf90328",
+        "created_date": "2021-06-29",
+        "brand": "Lamborghini",
+        "vehicle_type": "car",
+        "discount_percent": 10
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+        "car_title": "Toyota Corolla",
+        "states": "Lumbini Provience",
+        "city": "Lokanthalli",
+        "years": 2016,
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Alarm System,Reversing Camera,Direct Fuel Injection,Auto Start/Stop,Wind Deflector",
+        "doors": "4",
+        "passenger": 10,
+        "model": "Corolla 2015",
+        "price": 1029,
+        "milege": 90,
+        "miles": 1000,
+        "description": "<p>The&nbsp;<strong>Toyota Corolla</strong>&nbsp;(Japanese: トヨタ・カローラ,&nbsp;<em>Toyota Karōra</em>)&nbsp;is a line of&nbsp;<a href=\"https://en.wikipedia.org/wiki/Subcompact_car\" title=\"Subcompact car\">subcompact</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Compact_car\" title=\"Compact car\">compact cars</a>&nbsp;manufactured and marketed globally by&nbsp;<a href=\"https://en.wikipedia.org/wiki/Toyota\" title=\"\">Toyota</a>. Introduced in 1966, the Corolla was the best-selling car worldwide by 1974 and has been one of the best-selling cars in the world since then. In 1997, the Corolla became the&nbsp;<a href=\"https://en.wikipedia.org/wiki/List_of_best-selling_automobiles\" title=\"List of best-selling automobiles\">best selling nameplate in the world</a>, surpassing the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Volkswagen_Beetle\" title=\"Volkswagen Beetle\">Volkswagen Beetle</a>.<a href=\"https://en.wikipedia.org/wiki/Toyota_Corolla#cite_note-1\">[1]</a>&nbsp;Toyota reached the milestone of 44 million Corollas sold over twelve generations in 2016.<a href=\"https://en.wikipedia.org/wiki/Toyota_Corolla#cite_note-44million-2\">[2]</a>&nbsp;The series has undergone several major redesigns.</p>\r\n\r\n<p>The name&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Corolla_(headgear)\" title=\"Corolla (headgear)\">Corolla</a></em>&nbsp;is part of Toyota&#39;s naming tradition of using names derived from the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Toyota_Crown\" title=\"Toyota Crown\">Toyota Crown</a>&nbsp;for sedans, with&nbsp;<em>&quot;<a href=\"https://en.wiktionary.org/wiki/corolla\" title=\"wikt:corolla\">corolla</a>&quot;</em>&nbsp;<a href=\"https://en.wikipedia.org/wiki/Latin\" title=\"Latin\">Latin</a>&nbsp;for &quot;small crown&quot;.<a href=\"https://en.wikipedia.org/wiki/Toyota_Corolla#cite_note-3\">[3]</a>&nbsp;The Corolla has always been exclusive in Japan to&nbsp;<em><a href=\"https://en.wikipedia.org/wiki/Toyota_Netz\" title=\"Toyota Netz\">Toyota Corolla Store</a></em>&nbsp;locations, and manufactured in Japan with a twin, called the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Toyota_Sprinter\" title=\"Toyota Sprinter\">Toyota Sprinter</a>&nbsp;until 2000. From 2006 to 2018 in Japan and much of the world, and from 2018 to 2020 in Taiwan, the hatchback companion had been called the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Toyota_Auris\" title=\"Toyota Auris\">Toyota Auris</a>.</p>\r\n\r\n<p>Early models were mostly&nbsp;<a href=\"https://en.wikipedia.org/wiki/Rear-wheel_drive\" title=\"Rear-wheel drive\">rear-wheel drive</a>, while later models have been&nbsp;<a href=\"https://en.wikipedia.org/wiki/Front-wheel_drive\" title=\"Front-wheel drive\">front-wheel drive</a>.&nbsp;<a href=\"https://en.wikipedia.org/wiki/Four-wheel_drive\" title=\"Four-wheel drive\">Four-wheel drive</a>&nbsp;versions have also been produced. The Corolla&#39;s traditional competitors have been the&nbsp;<a href=\"https://en.wikipedia.org/wiki/Nissan_Sunny\" title=\"Nissan Sunny\">Nissan Sunny</a>, introduced the same year as the Corolla in Japan and the later&nbsp;<a href=\"https://en.wikipedia.org/wiki/Honda_Civic\" title=\"Honda Civic\">Honda Civic</a>&nbsp;and&nbsp;<a href=\"https://en.wikipedia.org/wiki/Mitsubishi_Lancer\" title=\"Mitsubishi Lancer\">Mitsubishi Lancer</a>. The Corolla&#39;s chassis designation code is &quot;E&quot;, as described in Toyota&#39;s chassis and engine codes.</p>",
+        "interior": "Metaallic gray",
+        "condition": "Brand New",
+        "tumbnail_img": "cars/2021/06/29/1900893319.jpg",
+        "pic_front": "cars/2021/06/29/1900893311.jpg",
+        "pic_back": "cars/2021/06/29/1900893299.jpg",
+        "pic_left": "cars/2021/06/29/1900893329.jpg",
+        "pic_right": "cars/2021/06/29/1900893391.jpg",
+        "body_style": "HatchBack",
+        "color": "white",
+        "fuel_type": "Petrol",
+        "is_featured": true,
+        "no_of_passed_owners": 3,
+        "transmission": "manual",
+        "engine": "skoeilkasjf",
+        "vin_number": "osfojwoifj039934",
+        "created_date": "2021-06-29",
+        "brand": "Unknown",
+        "vehicle_type": "Unknown",
+        "discount_percent": 4
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+        "car_title": "2017 Ford Edge",
+        "states": "Karnali Provience",
+        "city": "Narayanghat",
+        "years": 2015,
+        "features": "Cruise Control,Audio Interface,Airbags,Air Conditioning,Seat Heating,ParkAssist,Power Steering,Reversing Camera,Direct Fuel Injection",
+        "doors": "4",
+        "passenger": 10,
+        "model": "Edge 2017",
+        "price": 98,
+        "milege": 0,
+        "miles": 1009,
+        "description": "<p>This is the car what if that you deserve for your dream.</p>",
+        "interior": "Metallic Black",
+        "condition": "Good Enough",
+        "tumbnail_img": "cars/2021/06/30/1901478607.jpg",
+        "pic_front": "cars/2021/06/30/1901478646.jpg",
+        "pic_back": "cars/2021/06/30/1901478618.jpg",
+        "pic_left": "cars/2021/06/30/1901478672.jpg",
+        "pic_right": "cars/2021/06/30/1901478672_6mbdzzI.jpg",
+        "body_style": "SUV",
+        "color": "Black",
+        "fuel_type": "Petrol",
+        "is_featured": true,
+        "no_of_passed_owners": 2,
+        "transmission": "automatic",
+        "engine": "hridoic",
+        "vin_number": "3902i032fie",
+        "created_date": "2021-06-30",
+        "brand": "Ford",
+        "vehicle_type": "car",
+        "discount_percent": 50
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+        "car_title": "Jagaur F-PACE",
+        "states": "Lumbini Provience",
+        "city": "Kalikot",
+        "years": 2008,
+        "features": "Cruise Control,Audio Interface,Air Conditioning,Seat Heating,ParkAssist,Power Steering,Reversing Camera,Direct Fuel Injection,Auto Start/Stop",
+        "doors": "4",
+        "passenger": 11,
+        "model": "F-PACE 2017",
+        "price": 1909,
+        "milege": 125,
+        "miles": 2930,
+        "description": "<p>This is beautiful family car ford.</p>",
+        "interior": "Wood Design",
+        "condition": "Brand New",
+        "tumbnail_img": "cars/2021/06/30/1902932542.jpg",
+        "pic_front": "cars/2021/06/30/1902932514.jpg",
+        "pic_back": "cars/2021/06/30/1902932503.jpg",
+        "pic_left": "cars/2021/06/30/1902932528.jpg",
+        "pic_right": "cars/2021/06/30/1902932503_BiZUauE.jpg",
+        "body_style": "Sedan",
+        "color": "Black",
+        "fuel_type": "Petrol",
+        "is_featured": false,
+        "no_of_passed_owners": 7,
+        "transmission": "automatic",
+        "engine": "VH6H Power Engine",
+        "vin_number": "fasdjflasdf3209",
+        "created_date": "2021-06-30",
+        "brand": "Jaguar",
+        "vehicle_type": "Car",
+        "discount_percent": 0
+    }
+},
+{
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+        "car_title": "Toyota 4Runner",
+        "states": "Bagmati Provience",
+        "city": "Tulsipur, Dang",
+        "years": 2006,
+        "features": "Audio Interface,Airbags,Air Conditioning,Alarm System,ParkAssist,Power Steering,Reversing Camera,Auto Start/Stop,Wind Deflector,Bluetooth Handset,Automatic Headlights",
+        "doors": "5",
+        "passenger": 10,
+        "model": "4Runner 2018",
+        "price": 809,
+        "milege": 125,
+        "miles": 1204,
+        "description": "<p>This&nbsp; is beast car for family time spending peope. ford</p>",
+        "interior": "Silver White",
+        "condition": "Brand New",
+        "tumbnail_img": "cars/2021/06/30/1893633875.jpg",
+        "pic_front": "cars/2021/06/30/1893633884.jpg",
+        "pic_back": "cars/2021/06/30/1896836887.jpg",
+        "pic_left": "cars/2021/06/30/1896836883.jpg",
+        "pic_right": "cars/2021/06/30/1893633879.jpg",
+        "body_style": "StationWagan",
+        "color": "White",
+        "fuel_type": "Petrol",
+        "is_featured": false,
+        "no_of_passed_owners": 3,
+        "transmission": "manual",
+        "engine": "Airflex",
+        "vin_number": "sadjfl238",
+        "created_date": "2021-06-30",
+        "brand": "Toyota",
+        "vehicle_type": "Car",
+        "discount_percent": 0
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 1,
+    "fields": {
+        "first_name": "safasf",
+        "last_name": "asdfasf",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "asdff",
+        "state": "adsfasf",
+        "email": "sandeepkoirala414@gmail.com",
+        "phone": "943435",
+        "message": "thisfsa",
+        "user_id": 0,
+        "created_date": "2021-07-03T18:36:07.399Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 2,
+    "fields": {
+        "first_name": "jeevan",
+        "last_name": "regmi",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "salyan",
+        "state": "kjkko",
+        "email": "sandeepkoirala414@gmail.com",
+        "phone": "njmn",
+        "message": "knkj,",
+        "user_id": 0,
+        "created_date": "2021-07-03T18:43:49.484Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 3,
+    "fields": {
+        "first_name": "adfs",
+        "last_name": "asdf",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'd like to know your best price for this",
+        "city": "saf",
+        "state": "adf",
+        "email": "asdf@fas.adf",
+        "phone": "sdaf",
+        "message": "asdfa",
+        "user_id": 0,
+        "created_date": "2021-07-03T18:46:02.619Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 4,
+    "fields": {
+        "first_name": "saf",
+        "last_name": "asdf",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "asdf",
+        "state": "asdf",
+        "email": "sandeepkoirala414@gmail.com",
+        "phone": "asdf",
+        "message": "asdfasdf",
+        "user_id": 0,
+        "created_date": "2021-07-03T18:51:06.711Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 5,
+    "fields": {
+        "first_name": "jeevan",
+        "last_name": "regmi",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "bhaktapur",
+        "state": "jkk",
+        "email": "sandeepkoirala414@gmail.com",
+        "phone": "jkn",
+        "message": "kkhihui",
+        "user_id": 0,
+        "created_date": "2021-07-03T19:06:23.675Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 6,
+    "fields": {
+        "first_name": "saf",
+        "last_name": "asf",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "asdf",
+        "state": "asf",
+        "email": "sandeepkoirala414@gmail.com",
+        "phone": "asfaf",
+        "message": "asfasf",
+        "user_id": 0,
+        "created_date": "2021-07-03T19:08:43.890Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 7,
+    "fields": {
+        "first_name": "jeevan",
+        "last_name": "regmi",
+        "car_id": 4,
+        "car_title": "Unknown",
+        "customer_need": "I'm interested in this",
+        "city": "salyan",
+        "state": "bnn",
+        "email": "jeevanregmi15@gmail.com",
+        "phone": "knjn",
+        "message": "jknnm",
+        "user_id": 2,
+        "created_date": "2021-07-03T19:36:11.118Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 8,
+    "fields": {
+        "first_name": "jeevan",
+        "last_name": "regmi",
+        "car_id": 1,
+        "car_title": "Lamborghini Huracán",
+        "customer_need": "I'm interested in this",
+        "city": "salyan",
+        "state": "sdsf",
+        "email": "jeevanregmi15@gmail.com",
+        "phone": "saffsa",
+        "message": "asfdasf",
+        "user_id": 2,
+        "created_date": "2021-07-03T20:04:01.784Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 9,
+    "fields": {
+        "first_name": "sudhdan",
+        "last_name": "regmi",
+        "car_id": 4,
+        "car_title": "Jagaur F-PACE",
+        "customer_need": "I'm interested in this",
+        "city": "salyan",
+        "state": "sadf",
+        "email": "xenonrazels@gmail.com",
+        "phone": "9829323",
+        "message": "Hey what's the best price for this car.",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:07:23.330Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 10,
+    "fields": {
+        "first_name": "ehue",
+        "last_name": "regmi",
+        "car_id": 2,
+        "car_title": "Toyota Corolla",
+        "customer_need": "I'm interested in this",
+        "city": "sdfa",
+        "state": "safdasf",
+        "email": "xenonrazels@gmail.com",
+        "phone": "9844902077",
+        "message": "jslafsadasf",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:08:32.861Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 11,
+    "fields": {
+        "first_name": "sdfaf",
+        "last_name": "safsa",
+        "car_id": 5,
+        "car_title": "Toyota 4Runner",
+        "customer_need": "I'm interested in this",
+        "city": "asfda",
+        "state": "sdfsa",
+        "email": "xenonrazels@gmail.com",
+        "phone": "98234238",
+        "message": "tehfoas",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:10:57.980Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 12,
+    "fields": {
+        "first_name": "sdfaf",
+        "last_name": "safsa",
+        "car_id": 5,
+        "car_title": "Toyota 4Runner",
+        "customer_need": "I'm interested in this",
+        "city": "asfda",
+        "state": "sdfsa",
+        "email": "xenonrazels@gmail.com",
+        "phone": "98234238",
+        "message": "tehfoas",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:14:07.241Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 13,
+    "fields": {
+        "first_name": "dsfasdf",
+        "last_name": "sadfsafs",
+        "car_id": 5,
+        "car_title": "Toyota 4Runner",
+        "customer_need": "I'm interested in this",
+        "city": "afsfa",
+        "state": "safasf",
+        "email": "18781_jeevan@kusom.edu.np",
+        "phone": "sdafasdf",
+        "message": "safasf",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:15:31.716Z"
+    }
+},
+{
+    "model": "contact.inquery",
+    "pk": 14,
+    "fields": {
+        "first_name": "Xenon ",
+        "last_name": "razels",
+        "car_id": 1,
+        "car_title": "Lamborghini Huracán",
+        "customer_need": "I'm interested in this",
+        "city": "salyan",
+        "state": "karnali",
+        "email": "xenonrazels@gmail.com",
+        "phone": "32498239",
+        "message": "fwafjlssaf",
+        "user_id": 0,
+        "created_date": "2021-07-04T03:27:09.178Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "localhost:8000",
+        "name": "localhost:8000"
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 1,
+    "fields": {
+        "provider": "facebook",
+        "name": "Facebook Login",
+        "client_id": "932868307556753",
+        "secret": "c2b03c2018e3ca61e210a9fa4687d238",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "socialaccount.socialapp",
+    "pk": 2,
+    "fields": {
+        "provider": "google",
+        "name": "Google Login",
+        "client_id": "461084991862-15top8a1jc6c5u3apii8saampps98ckl.apps.googleusercontent.com",
+        "secret": "VVEdXfASMQy1AOWVMX1vihN9",
+        "key": "",
+        "sites": [
+            [
+                "localhost:8000"
+            ]
+        ]
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-06-29T12:31:05.107Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "1",
+        "object_repr": "Sudhan Regmi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-06-29T12:32:52.953Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "2",
+        "object_repr": "Aacreetiee Koirala",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-06-29T12:34:35.055Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "3",
+        "object_repr": "Jeevan Regmi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-06-29T12:35:54.428Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "pages",
+            "team"
+        ],
+        "object_id": "4",
+        "object_repr": "Aayush Bhatta",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-06-29T12:47:25.252Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-06-29T12:58:26.968Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-06-29T13:20:03.876Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-06-29T13:20:15.845Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Is featured\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-06-30T09:53:23.660Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-06-30T10:11:20.133Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-06-30T10:17:12.694Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyata 4Runner",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-06-30T12:12:26.874Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyata 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-07-01T02:34:52.902Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyata 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-07-01T02:35:04.291Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-07-01T02:50:00.343Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Price\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-07-01T02:58:05.379Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Discount percent\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-07-01T10:40:48.670Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Car title\", \"Transmission\", \"Brand\", \"Vehicle type\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-07-01T10:41:46.508Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Brand\", \"Vehicle type\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-07-01T10:42:07.962Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Brand\", \"Vehicle type\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-07-01T10:43:23.795Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Brand\", \"Vehicle type\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-07-01T11:37:52.360Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-07-01T11:37:58.802Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-07-01T11:38:07.888Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-07-01T11:38:18.741Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-07-01T12:06:46.293Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-07-01T12:06:54.958Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"States\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-07-01T12:11:42.524Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body style\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-07-01T12:12:28.546Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body style\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-07-01T12:14:44.315Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body style\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-07-01T12:15:41.701Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body style\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-07-01T12:16:25.676Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Body style\", \"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-07-02T00:39:52.539Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2021-07-02T00:40:09.054Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2021-07-02T01:09:35.760Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2021-07-02T01:10:36.834Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2021-07-02T01:15:36.915Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2021-07-02T01:15:47.230Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2021-07-02T01:15:59.946Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2021-07-02T01:16:32.450Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2021-07-02T01:17:22.983Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "3",
+        "object_repr": "2017 Ford Edge",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2021-07-02T01:17:33.672Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2021-07-02T01:18:00.394Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "5",
+        "object_repr": "Toyota 4Runner",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2021-07-02T01:18:20.467Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2021-07-02T01:18:57.489Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "2",
+        "object_repr": "Toyota Corolla",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2021-07-02T01:19:34.800Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2021-07-02T01:24:28.100Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "4",
+        "object_repr": "Jagaur F-PACE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2021-07-02T01:24:55.989Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "cars",
+            "car"
+        ],
+        "object_id": "1",
+        "object_repr": "Lamborghini Huracán",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Transmission\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2021-07-03T03:52:45.306Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "1",
+        "object_repr": "localhost:8000",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Domain name\", \"Display name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2021-07-03T06:20:40.885Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2021-07-03T06:58:05.120Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook Login",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2021-07-03T08:32:50.613Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "1",
+        "object_repr": "Facebook Login",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2021-07-03T08:33:59.558Z",
+        "user": [
+            "djangoadmin"
+        ],
+        "content_type": [
+            "socialaccount",
+            "socialapp"
+        ],
+        "object_id": "2",
+        "object_repr": "Google Login",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Wheelars | Blog{% endblock %}
+{% block content %}
+    <div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Blog</h1>
+            <h2 class="text-white">Share your amzazing expericence with us.<br><a class="btn btn-danger text-white" href="{% url 'blog:home' %}">Write blog</a></h2>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li class="active">Blog</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

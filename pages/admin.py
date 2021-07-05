@@ -1,5 +1,5 @@
 from django.contrib import admin
-from  .models   import Team
+from  .models   import Team,Contact
 from django.utils.html import format_html
 # Register your models here.
 
@@ -13,3 +13,6 @@ class TeamAdmin(admin.ModelAdmin):
     search_fields = ('email','designation','first_name','last_name')
     list_display = ('id','first_name','last_name','photo','email','designation')
     ordering = ('id',)
+@admin.register(Contact)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('id','name','email','subject')

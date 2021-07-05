@@ -1,6 +1,6 @@
-from datetime import datetime
+import os
 
-year =[]
-for i in range(2000,datetime.now().year +1):
-    year.append((i,i))
-print(year)
+user_name = os.environ.get('gmail')
+password = os.environ.get('gpassword')
+
+print(user_name, password)

@@ -20,7 +20,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pages.urls',namespace='pages')),
-    path('cars/',include('cars.urls',namespace='cars')),
+    path('', include('pages.urls', namespace='pages')),
+    path('cars/', include('cars.urls', namespace='cars')),
+    path('accounts/', include('accounts.urls', namespace='accounts')),
+    path('blog/', include('blog.urls', namespace='blog')),
+    path('socialaccounts/', include('allauth.urls')),
+    path('contact/',include('contact.urls',namespace='contact')),
 
-]+static( settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

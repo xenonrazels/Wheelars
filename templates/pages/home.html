@@ -1,4 +1,7 @@
 {% extends 'base.html' %}
+{% block title %}
+Wheelars | Home
+{% endblock %}
 {% block content %}
     {% load humanize %}
     {% load static %}
@@ -293,11 +296,13 @@
                         <div class="photo">
                             <a href="#">
                                 <img src="{{ team.profile_img.url }}" alt="team-1" class="img-fluid">
+                                <i class="fa fa-twitter facebook-bg"> </i>
                             </a>
                             <div class="social-list clearfix">
-                                <a href="{{ team.facebook_link }}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="{{ team.twitter_link }}" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="{{ team.insta_link }}" target="_blank" class="google-bg"><i class="fa fa-instagram"></i></a>
+                                <i class="fa fa-twitter facebook-bg"> </i>
+                                <a href="{{ team.facebook_link }}" target="_blank" ><i class="fa fa-facebook"></i></a>
+                                <a href="{{ team.twitter_link }}" target="_blank" ><i class="fa fa-twitter"></i></a>
+                                <a href="{{ team.insta_link }}" target="_blank" ><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                         <div class="details">
@@ -321,7 +326,6 @@
             <div class="col-lg-9 col-md-8 col-sm-12">
                 <div class="intro-text ">
                     <h3>Do You Have Questions ?</h3>
-                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKCTNepal&tabs=timeline&width=340&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                 </div>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-12">
