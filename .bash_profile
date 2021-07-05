@@ -1,3 +1,0 @@
-hey
-ealfs
-sf
