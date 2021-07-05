@@ -1,1 +1,1 @@
-web: gunicorn wheelars.wsgi
+web: gunicorn wheelars.wsgi --log-file -
