@@ -30,7 +30,7 @@ SECRET_KEY = '5%%8o737b7@@_p5pk0*a35^g^!+j-l19_4m%bj)n)4fbnibw+-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wheelars.herokuapp.com','wheelars.com','www.wheelars.com','localhost:8000','http://127.0.0.1:8000/']
 
 
 # Application definition
@@ -163,7 +163,7 @@ MESSAGE_TAGS={
 }
 SITE_ID=1
 DEFAULT_HTTP_PROTOCOL = "https"
-LOGIN_REDIRECT_URL = reverse_lazy('accounts/dashboard')
+LOGIN_REDIRECT_URL = reverse_lazy('accounts:dashboard')
 
 LOGIN_URL= reverse_lazy('accounts:login')
 
@@ -176,4 +176,4 @@ EMAIL_HOST_PASSWORD='TheGreatking25!'
 EMAIL_USE_TLS=True
 
 #whitenose setup
-STATICFILES_STORAGE='whitenoise.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
