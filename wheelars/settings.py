@@ -28,9 +28,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5%%8o737b7@@_p5pk0*a35^g^!+j-l19_4m%bj)n)4fbnibw+-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['wheelars.herokuapp.com','wheelars.com','www.wheelars.com','localhost:8000','http://127.0.0.1:8000/']
+ALLOWED_HOSTS = ['wheelars.herokuapp.com','wheelars.com','www.wheelars.com','localhost:8000','http://127.0.0.1:8000/','localhost']
 
 
 # Application definition
@@ -77,7 +77,7 @@ ROOT_URLCONF = 'wheelars.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR +'/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
