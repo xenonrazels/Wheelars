@@ -14,6 +14,8 @@ import os
 import psycopg2
 from django.contrib.messages import constants as messages
 from django.urls  import reverse_lazy
+import  dj_database_url
+import whitenoise
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -26,7 +28,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5%%8o737b7@@_p5pk0*a35^g^!+j-l19_4m%bj)n)4fbnibw+-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -67,6 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'wheelars.urls'
@@ -92,16 +95,19 @@ WSGI_APPLICATION = 'wheelars.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wheelarsprojdb',
-        'USER':'aacreetiee',
-        'PASSWORD' : 'aakuiloveu25!.',
-        'HOST':'localhost',
-        'PORT':'',
-    }
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'wheelarsprojdb',
+#         'USER':'aacreetiee',
+#         'PASSWORD' : 'aakuiloveu25!.',
+#         'HOST':'localhost',
+#         'PORT':'',
+#     }
+# }
+DATABASES={
+    'default':dj_database_url.config(default='postgres://aacreetiee:aakuiloveu25!.@localhost/wheelarsprojdb')
 }
 
 
@@ -168,3 +174,6 @@ EMAIL_PORT=587
 EMAIL_HOST_USER='sudhanregmi25@gmail.com'
 EMAIL_HOST_PASSWORD='TheGreatking25!'
 EMAIL_USE_TLS=True
+
+#whitenose setup
+STATICFILES_STORAGE='whitenoise.CompressedManifestStaticFilesStorage'
