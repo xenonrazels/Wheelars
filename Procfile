@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web:gunicorn wheelars.wsgi
+web: gunicorn wheelars.wsgi
