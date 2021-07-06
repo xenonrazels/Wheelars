@@ -161,7 +161,7 @@ MESSAGE_TAGS={
     messages.DEBUG:'debug',
     50:'critical',
 }
-SITE_ID=1
+SITE_ID=3
 DEFAULT_HTTP_PROTOCOL = "https"
 LOGIN_REDIRECT_URL = reverse_lazy('accounts:dashboard')
 
