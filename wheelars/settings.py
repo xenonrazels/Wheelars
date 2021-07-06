@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '5%%8o737b7@@_p5pk0*a35^g^!+j-l19_4m%bj)n)4fbnibw+-'
+SECRET_KEY = os.environ.get('wheelars_secretKey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -96,18 +96,12 @@ WSGI_APPLICATION = 'wheelars.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 #
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'wheelarsprojdb',
-#         'USER':'aacreetiee',
-#         'PASSWORD' : 'aakuiloveu25!.',
-#         'HOST':'localhost',
-#         'PORT':'',
-#     }
 # }
+user=os.environ.get('wheelars_dbu')
+password=os.environ.get('wheelars_dbp')
+
 DATABASES={
-    'default':dj_database_url.config(default='postgres://aacreetiee:aakuiloveu25!.@localhost/wheelarsprojdb')
+    'default':dj_database_url.config(default='postgres://user:{password}@localhost/wheelarsprojdb')
 }
 
 
@@ -171,8 +165,8 @@ LOGIN_URL= reverse_lazy('accounts:login')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
-EMAIL_HOST_USER='sudhanregmi25@gmail.com'
-EMAIL_HOST_PASSWORD='TheGreatking25!'
+EMAIL_HOST_USER=os.environ.get('sgpassword')
+EMAIL_HOST_PASSWORD=os.environ.get('sgmail')
 EMAIL_USE_TLS=True
 
 #whitenose setup
