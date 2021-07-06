@@ -5,6 +5,8 @@
 {% block content %}
 
     {% load static %}
+    {% load socialaccount %}
+    {% providers_media_js %}
 
     <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
@@ -61,12 +63,9 @@
                         <div class="extra-login clearfix">
                             <span>Or Login With</span>
                         </div>
-                        <div class="clearfix"></div>
-                        <ul class="social-list">
-                            <li><a href="#" class="facebook-bg"><i class="fa fa-facebook facebook-i"></i><span>Facebook</span></a></li>
-                            <li><a href="#" class="google-bg"><i class="fa fa-google google-i"></i><span>Google</span></a></li>
-                        </ul>
                     </form>
+                    <a href="{% provider_login_url 'google'  %}" ><button class="btn google-bg m-2"><i class="fa fa-google fa-lg"></i><span class="text-white">Google</span></button></a>
+                       <a href= " {% provider_login_url 'facebook' method='oauth2' %} "> <button class="btn btn-primary mr-2 pl-2"><i class="fa fa-facebook">&nbsp;</i><span class="text-white">Facebook</span></button></a>
                     <p>Already a member? <a href="{% url 'accounts:login' %}" class="thembo"> Login here</a></p>
                 </div>
             </div>
