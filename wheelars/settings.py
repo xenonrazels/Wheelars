@@ -173,8 +173,8 @@ LOGIN_URL= reverse_lazy('accounts:login')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT= 587
-EMAIL_HOST_USER='wheelars25@gmail.com'
-EMAIL_HOST_PASSWORD='Idontknowwhy25!.'
+EMAIL_HOST_USER='WHELL_USER'
+EMAIL_HOST_PASSWORD=os.environ.get("WHEEL_PASS")
 EMAIL_USE_TLS=True
 
 #whitenose setup
