@@ -51,8 +51,8 @@ def contact(request):
         send_mail(
         'Someone is trying to reach you.',
          "Hi jeevan"+ "\n"+"Person with name:"+ name+" \n"+email+"\n"+phone+"\n"+"Subject: "+subject+"\n"+message+"\n is trying to reach you.",
-        'sudhanregmi25@gmail.com',
-        ['jeevanregmi15@gmail.com'],
+        'wheelars25@gmail.com',
+        ['jeevanregmi15@gmail.com','wheelars25@gmail.com'],
         fail_silently=False,
         )
         messages.success(request,"You contact form is sent successfully.")

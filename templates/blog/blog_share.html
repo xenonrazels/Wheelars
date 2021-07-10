@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+    <div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Blog</h1>
+            <h2 class="text-white">Share your amzazing expericence with us.<br><a class="btn btn-danger text-white" href="#">Write blog</a></h2>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'pages:home' %}">Home</a></li>
+                <li class="active">Blog</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <hr >
+<div class="container">
+{% if sent %}
+    <h1>E-mail successfully sent</h1>
+    <h3>{{post.title}} is sucessfully sent to {{ cd.to }}</h3>
+    {% else %}
+    <h1>Share BLOG:<b>{{ blog.title }}</b> by email.</h1>
+<form action="" method="post" class="form">
+{% csrf_token %}
+    {{ form|crispy }}
+<input type="submit" value="Send Post mail" class="btn btn-round text-white btn-primary mb-4 ">
+</form>
+    {% endif %}
+</div>
+{% endblock %}

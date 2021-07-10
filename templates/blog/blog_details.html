@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load crispy_forms_tags %}
+<div class="sub-banner overview-bgi my-3 ">
+    <div class="container breadcrumb-area ">
+        <div class="breadcrumb-areas">
+            <h1>Blog</h1>
+            <h2 class="text-white">Share your amzazing expericence of vehicle and trip with us.<br></h2>
+{#            <a class="btn btn-danger text-white" href="#">Write blog</a>#}
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'pages:home' %}">Home /</a></li>
+                <li><a href="{% url 'blog:blogs' %}">Blog</a></li>
+                <li class="active">{{blog.title}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<main role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+
+      <div class="blog-post my-4 ">
+        <figure>
+            <img src="{{ blog.feature_img.url }}"/>
+        </figure>
+        <h2 class="blog-post-title">{{ blog.title }}</h2>
+        <p class="blog-post-meta">{{ blog.publish }} by <a href="#">{{ blog.author }}</a></p>
+
+        <p >{{ blog.body|safe }}</p>
+      <hr class="my-4 border-dark">
+          {% with comments.count as total_comments %}
+              <h2 class="heading-2"></h2>
+              {{ total_comments }} comment{{ total_comments|pluralize }}
+          {% endwith %}
+      {% for comment in comments %}
+          <div>
+              Comment {{ forloop.counter }} by {{ comment.name }}
+              {{ comment.created }}
+          </div>
+                <div class="container">
+                    <p class="text-danger">{{ comment.body|linebreaks }}</p>
+                </div>
+
+
+
+          {% empty %}
+<div >There are no commnets yet.</div>
+      {% endfor %}
+      {%  if new_comment %}
+      <h2>Your comments has been successfully added</h2>
+          {% else %}
+      <h3><b>Place Your comments</b></h3>
+      <form action="#" method="post" class="form">
+          {% csrf_token %}
+          {{ form|crispy }}
+          <input type="submit" value="ADD COMMNET" class="btn btn-round text-white px-4 bg-primary">
+      </form>
+      {% endif %}
+      </div><!-- /.blog-post -->
+
+
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">Tags</h4>
+
+          {% for tag in tags %}
+              <li type="none" class="list-inline-item py-2 " ><button class="btn btn-dark text-White">{{ tag }}</button></li>
+          {% endfor %}
+      </div>
+    <div class="p-4">
+        <h4 class="font-italic border-bottom">Share this blog on</h4>
+        <div class="social-list-2">
+            <a href="{% url 'blog:blog_share' blog.id %}"> <button class="btn btn-round bg-primary"><i class="fa text-white fa-envelope"></i></button></a>
+            <button class="btn btn-round bg-danger" ><i class="fa fa-lg text-white fa-google"></i></button>
+            <button class="btn btn-round bg-primary " ><i class="fa fa-lg text-white fa-facebook"></i></button>
+            <a href="https://instagram.com" ><button class="btn btn-round bg-danger " ><i class="fa fa-lg text-white fa-instagram"></i></button></a>
+        </div>
+      </div>
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+        <ol class="list-unstyled mb-0">
+          <li><a href="#">March 2014</a></li>
+          <li><a href="#">February 2014</a></li>
+          <li><a href="#">January 2014</a></li>
+          <li><a href="#">December 2013</a></li>
+          <li><a href="#">November 2013</a></li>
+          <li><a href="#">October 2013</a></li>
+          <li><a href="#">September 2013</a></li>
+          <li><a href="#">August 2013</a></li>
+          <li><a href="#">July 2013</a></li>
+          <li><a href="#">June 2013</a></li>
+          <li><a href="#">May 2013</a></li>
+          <li><a href="#">April 2013</a></li>
+        </ol>
+      </div>
+
+
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+{% endblock %}

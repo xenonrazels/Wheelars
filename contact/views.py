@@ -29,15 +29,15 @@ def inquery(request):
         send_mail(
         'New car inquery',
         "You have got a new inquery for the car"+ car_title +'.Please, login to your admin panel for more info.',
-        'sudhanregmi25@gmail.com',
-        ['jeevanregmi15@gmail.com'],
+        'wheelars25@gmail.com',
+        ['jeevanregmi15@gmail.com','wheelars25@gmail.com'],
         fail_silently=False,
         )
         send_mail(
             'Inquery registered',
             "Hi,"+first_name+''+last_name+'\n' 'We have received your inquery for '+ car_title + 'We will contact you soon!..',
-            'sudhanregmi25@gmail.com',
-            [email],
+            'wheelars25@gmail.com',
+            [email,'wheelars25@gmail.com'],
             fail_silently=False,
         )
 

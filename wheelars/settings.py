@@ -57,7 +57,9 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.google'
+    'allauth.socialaccount.providers.google',
+    'crispy_forms',
+    'taggit'
 
 ]
 
@@ -161,7 +163,7 @@ MESSAGE_TAGS={
     messages.DEBUG:'debug',
     50:'critical',
 }
-SITE_ID=3
+SITE_ID=1
 DEFAULT_HTTP_PROTOCOL = "https"
 LOGIN_REDIRECT_URL = reverse_lazy('accounts:dashboard')
 
@@ -170,10 +172,12 @@ LOGIN_URL= reverse_lazy('accounts:login')
 #Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_HOST_USER='sudhanregmi25@gmail.com'
-EMAIL_HOST_PASSWORD=os.environ.get('S_GMAIL_P')
+EMAIL_PORT= 587
+EMAIL_HOST_USER='wheelars25@gmail.com'
+EMAIL_HOST_PASSWORD='Idontknowwhy25!.'
 EMAIL_USE_TLS=True
 
 #whitenose setup
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+#django crispy forms
+CRISPY_TEMPLATE_PACK='bootstrap4'

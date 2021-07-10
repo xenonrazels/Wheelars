@@ -23,7 +23,7 @@ urlpatterns = [
     path('', include('pages.urls', namespace='pages')),
     path('cars/', include('cars.urls', namespace='cars')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
-    path('blog/', include('blog.urls', namespace='blog')),
+    path('blogs/', include('blog.urls', namespace='blog')),
     path('socialaccounts/', include('allauth.urls')),
     path('contact/',include('contact.urls',namespace='contact')),
 

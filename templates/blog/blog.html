@@ -4,8 +4,9 @@
     <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
-            <h1>Blog</h1>
-            <h2 class="text-white">Share your amzazing expericence with us.<br><a class="btn btn-danger text-white" href="{% url 'blog:home' %}">Write blog</a></h2>
+            <h1>Blogs</h1>
+            <h2 class="text-white">Share your amazing experience of vehicle and trips with us.<br></h2>
+{#            <a class="btn btn-danger text-white" href="#">Write blog</a>#}
             <ul class="breadcrumbs">
                 <li><a href="{% url 'pages:home' %}">Home</a></li>
                 <li class="active">Blog</li>
@@ -13,4 +14,64 @@
         </div>
     </div>
 </div>
+    <hr >
+<h2 align="center">Blog Lists</h2>
+    <div class="container-fluid margin-t-10">
+        <div class="row">
+            <div class="col-lg-9 col-md-12 border-right border-dark">
+
+             {% for blog in blogs  %}
+                <div class="row row-content align-items-center m-auto ">
+                        <div style="height:200px;" class="col-10 col-10 col-md-10 ">
+                            <div class="media">
+                               {% if blog.feature_img %} <img src="{{ blog.feature_img.url }}" alt=""  width="150" height="200" class="d-flex mr-3 img-thumbnail">{% endif %}
+                                <div class="media-body">
+                                <h3 class="mt-0">{{ blog.title|capfirst }}{% if features %}<span style="line-height:0.5em" class="badge badge-danger ">Latest</span></h3>{% endif %}
+                                    <a href="{{ blog.get_absolute_url }}" class="d-none d-sm-block">{{ blog.body|truncatewords:15 |safe }} <button  style ="color:dodgerblue;" class="btn inline btn-sm  btn-round ">Continue Reading</button></a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    <div  class="col-2 col-sm-2 col-md-2 ">
+                       <i><h3 style = " color:red ">By</h3>
+                        <h4>{{ blog.author.first_name |capfirst}}</h4></i>
+                    </div>
+                </div>
+                 <hr/>
+            {% endfor %}
+{% include 'includes/pagination.html' with page=blogs %}
+            </div>
+            <aside style="width:100%" class=" sidebar-right col-lg col-md-12 m-auto ">
+        <h3 align="center" class="sidebar-heading">Extras</h3>
+        <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-default" type="submit">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </div>
+
+
+        <h3 align="center" class="my-2 sidebar-title">ARCHIEVES</h3>
+        <h3 align="center" class="my-2 sidebar-title bg-light py">Tags</h3>
+                 {% for tag in tags %}
+              <li type="none" class="list-inline-item py-2" ><button class="btn btn-dark text-White">{{ tag }}</button></li>
+          {% endfor %}
+        <hr class="border-dark">
+        <b><h3 align="center" class="my-2 border-bottom">Follow us on</h3></b>
+        <div align="center" class="social-list-2 ">
+            <button class="btn btn-round bg-danger mx-2 " ><i class="fa fa-lg text-white fa-google"></i></button>
+            <button class="btn btn-round bg-primary mx-2 " ><i class="fa fa-lg text-white fa-facebook"></i></button>
+            <a href="https://instagram.com" ><button class="btn btn-round bg-danger mx-2 " ><i class="fa fa-lg text-white fa-instagram"></i></button></a>
+        </div>
+
+    </aside>
+            </div>
+        <hr>
+
+        </div>
+
+    </div>
+
 {% endblock %}
