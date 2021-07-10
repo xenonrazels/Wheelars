@@ -163,7 +163,7 @@ MESSAGE_TAGS={
     messages.DEBUG:'debug',
     50:'critical',
 }
-SITE_ID=1
+SITE_ID=3
 DEFAULT_HTTP_PROTOCOL = "https"
 LOGIN_REDIRECT_URL = reverse_lazy('accounts:dashboard')
 
@@ -173,7 +173,7 @@ LOGIN_URL= reverse_lazy('accounts:login')
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT= 587
-EMAIL_HOST_USER='WHELL_USER'
+EMAIL_HOST_USER=os.environ.get('WHELL_USER')
 EMAIL_HOST_PASSWORD=os.environ.get("WHEEL_PASS")
 EMAIL_USE_TLS=True
 
